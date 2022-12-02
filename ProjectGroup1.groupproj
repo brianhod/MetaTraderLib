@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{268A088F-D934-48E9-928C-3044CF6AFFA0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="mtlic.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="mtlic">
+        <MSBuild Projects="mtlic.cbproj"/>
+    </Target>
+    <Target Name="mtlic:Clean">
+        <MSBuild Projects="mtlic.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mtlic:Make">
+        <MSBuild Projects="mtlic.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project1">
+        <MSBuild Projects="\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1.cbproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="mtlic;Project1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="mtlic:Clean;Project1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="mtlic:Make;Project1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

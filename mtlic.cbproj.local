@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/01 02:00:57.000.230,=\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2018/12/01 02:00:57.000.236,=\\Mac\Home\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2018/12/01 02:37:38.000.416,C:\MetaTraderLib\mt4lic.cpp=\\Mac\Home\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2018/12/01 02:37:59.000.840,C:\MetaTraderLib\mtlic.h=\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2018/12/01 02:38:19.000.739,C:\MetaTraderLib\mtlic.cbproj=\\Mac\Home\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2018/12/02 00:45:02.000.096,=C:\MetaTraderLib\Unit1.cpp</Transaction>
+    <Transaction>2018/12/02 00:46:58.000.116,C:\MetaTraderLib\Unit1.h=C:\MetaTraderLib\SerialForm.h</Transaction>
+    <Transaction>2018/12/02 00:46:58.000.116,C:\MetaTraderLib\Unit1.cpp=C:\MetaTraderLib\SerialForm.cpp</Transaction>
+    <Transaction>2018/12/02 00:46:58.000.116,C:\MetaTraderLib\Unit1.dfm=C:\MetaTraderLib\SerialForm.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
